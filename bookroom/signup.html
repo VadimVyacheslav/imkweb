@@ -43,19 +43,19 @@
         <div class="signup-box">
             <h1>Sign up to Bookroom</h1>
             <p>Quick & Simple way to Automate your payment</p>
-            <form action="#">
+            <form action="signup.php" method="POST">
                 <div class="input-group">
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" placeholder="John">
+                    <input type="text" id="name" name="name" placeholder="John">
                 </div>
                 <div class="input-group">
                     <label for="email">EMAIL ADDRESS</label>
-                    <input type="email" id="email" placeholder="johndoe@example.com">
+                    <input type="email" id="email" name="email" placeholder="johndoe@example.com">
                 </div>
                 <div class="input-group">
                     <label for="password">PASSWORD</label>
                     <div class="password-wrapper">
-                        <input type="password" id="password" placeholder="************">
+                        <input type="password" id="password" name="password" placeholder="************">
                         <span class="show-password">👁️</span>
                     </div>
                 </div>
