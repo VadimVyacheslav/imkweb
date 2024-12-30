@@ -1,0 +1,91 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+  }
+  
+  /* Search Bar Section */
+  .search-bar {
+    background: linear-gradient(to right, #FF69B4, #00FFFF); /* Gradasi biru ke ungu */
+    padding: 65px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 40%;
+    outline: none;
+    font-size: 18px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+  
+  .search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+  }
+  
+  /* Book List Section */
+  .book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 2%;
+    margin-right: 2%;
+  }
+
+  .container {
+    max-width: 100%;
+    margin-left: 90px;
+    transition: margin-left 0.3s ease-in-out; /* Smooth transition */
+}
+
+  
+  .sidebar.expanded ~ .container {
+    margin-left: 290px; /* Adjusted for expanded sidebar */
+}
+
+  /* Book Item */
+  .book-item {
+    display: flex;
+    gap: 15px;
+    background: white;
+    padding: 20px;
+
+  }
+  
+  .book-item img {
+    width: 100px;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-info h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .book-info .author {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .book-info .description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
