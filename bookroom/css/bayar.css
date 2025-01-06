@@ -1,0 +1,130 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Sign Up Container */
+.signup-container {
+    position: relative;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Heading */
+.signup-box h1 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.signup-box p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 12px;
+    color: #444;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.input-group input {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    width: calc(100% - 25px);
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Extras */
+.extras {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.extras a {
+    color: #3498db;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+/* Buttons */
+.create-account-btn {
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signin-btn {
+    position: absolute;
+    top: 16px;
+    right: 50px;
+    background: transparent;
+    border: 1px solid black;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+.or {
+    font-size: 12px;
+    color: #999;
+    margin: 16px 0;
+}

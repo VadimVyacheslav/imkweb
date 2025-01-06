@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         echo "Pendaftaran berhasil!";
-        header("Location: signin.html"); // Redirect ke halaman login
+        header("Location: bayar.html"); // Redirect ke halaman login
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
