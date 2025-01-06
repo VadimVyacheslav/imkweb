@@ -87,76 +87,22 @@ $user = $result->fetch_assoc();
                       <p><?php echo htmlspecialchars($user['email']); ?></p>
                     </div>
                   </div> 
-                  
-                  <div class="button-edit">
-                    <button>Edit</button>
-                  </div>
                 </div>
-                <form class="profile-form">
+                <form class="profile-form" action="edit.php" method="POST">
                     <div class="form-row">
-                        <label>Full Name</label>
-                        <input type="text" placeholder="Your First Name">
+                        <label>Nama</label>
+                        <input type="text" name="name" placeholder="Nama">
                     </div>
                     <div class="form-row">
-                        <label>Nick Name</label>
-                        <input type="text" placeholder="Your Nick Name">
+                        <label>Email</label>
+                        <input type="text" name="email" placeholder="<?php echo htmlspecialchars($user['email']); ?>">
                     </div>
                     <div class="form-row">
-                        <label>Gender</label>
-                        <select name="country" id="country">
-                          <option> Female </option>
-                          <option> Male </option>
-                          <option> - </option>
-                        </select>
+                        <label>Password</label>
+                        <input type="text" name="password" placeholder="********">
                     </div>
-                    <div class="form-row">
-                        <label>Country</label>
-                        <select name="country" id="country">
-                          <option value="indonesia">Indonesia</option>
-                          <option value="usa">United States</option>
-                          <option value="canada">Canada</option>
-                          <option value="uk">United Kingdom</option>
-                          <option value="australia">Australia</option>
-                          <option value="japan">Japan</option>
-                          <option value="germany">Germany</option>
-                          <option value="france">France</option>
-                          <option value="south_korea">South Korea</option>
-                          <option value="india">India</option>
-                        </select>
-                    </div>
-                    <div class="form-row">
-                        <label>Language</label>
-                        <select name="language" id="language">
-                          <option value="english">English</option>
-                          <option value="indonesian">Indonesian</option>
-                          <option value="spanish">Spanish</option>
-                          <option value="french">French</option>
-                          <option value="german">German</option>
-                          <option value="japanese">Japanese</option>
-                          <option value="korean">Korean</option>
-                          <option value="mandarin">Mandarin</option>
-                          <option value="hindi">Hindi</option>
-                          <option value="arabic">Arabic</option>
-                        </select>
-                    </div>
-                    <div class="form-row">
-                        <label>Time Zone</label>
-                        <select name="timezone" id="timezone">
-                          <option value="utc-12">(UTC-12:00) Baker Island Time</option>
-                          <option value="utc-11">(UTC-11:00) Niue Time</option>
-                          <option value="utc-10">(UTC-10:00) Hawaii-Aleutian Standard Time</option>
-                          <option value="utc-9">(UTC-09:00) Alaska Standard Time</option>
-                          <option value="utc-8">(UTC-08:00) Pacific Standard Time</option>
-                          <option value="utc-7">(UTC-07:00) Mountain Standard Time</option>
-                          <option value="utc-6">(UTC-06:00) Central Standard Time</option>
-                          <option value="utc-5">(UTC-05:00) Eastern Standard Time</option>
-                          <option value="utc">(UTC+00:00) Coordinated Universal Time</option>
-                          <option value="utc+1">(UTC+01:00) Central European Time</option>
-                          <option value="utc+5:30">(UTC+05:30) Indian Standard Time</option>
-                          <option value="utc+8">(UTC+08:00) China Standard Time</option>
-                          <option value="utc+9">(UTC+09:00) Japan Standard Time</option>
-                          <option value="utc+10">(UTC+10:00) Australian Eastern Standard Time</option>
-                        </select>
+                    <div class="button-edit">
+                    <button type="submit">Edit</button>
                     </div>
                 </form>
 
@@ -169,10 +115,10 @@ $user = $result->fetch_assoc();
                         <p class="email-address"><?php echo htmlspecialchars($user['email']); ?></p>
                         <p class="email-time">1 month ago</p>
                     </div>
-                    
                 </div>
-                <button class="button-email">+ Add Email Address</button>
-            </section>
+                <div class="button-edit">
+                    <a href="logout.php"><button type="submit">LOGOUT</button></a>
+                </div>
         </main>
 
     <script src="js/sidebar.js"></script>
