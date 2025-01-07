@@ -80,7 +80,7 @@ include 'auth.php';
         margin-left: auto;
         margin-right: auto;
         }</style><title>Alice’s Adventures in Wonderland</title>
-<link href="images/cover.jpg" rel="icon" type="image/x-cover" id="id-5766398705905168236">
+<link href="img/alice.jpg" rel="icon" type="image/x-cover" id="id-5766398705905168236">
 <style>body {
     background: #faebd0;
     margin-left: 10%;
@@ -193,7 +193,7 @@ a:hover {
 </head>
 <body><
 <div class="fig" style="width:60%;">
-<img alt="" src="images/cover.jpg" style="width:100%;" id="img_images_cover.jpg">
+<img alt="" src="img/alice.jpg" style="width:100%;" id="img_images_cover.jpg">
 </div>
 <h1>Alice’s Adventures in Wonderland</h1>
 <h2>by Lewis Carroll</h2>
